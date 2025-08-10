@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react'
 
-const Subjects = () => {
+const CreateQuiz = () => {
   // --- State Management ---
   // I've added the necessary state management to make the form functional for display purposes.
   // The actual submission logic is pending.
@@ -143,4 +143,4 @@ const Subjects = () => {
   );
 }
 
-export default Subjects;
+export default CreateQuiz
