@@ -22,6 +22,14 @@ function App() {
 
     // console.log(session)
 
+    const signOut = async () => {
+      const {error} = await supabase.auth.signOut()
+      if (error) {
+        console.log(error)
+      }
+    }
+
+
      if (!session) {
       return (<Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />)
     }
@@ -29,6 +37,7 @@ function App() {
       return (
       <div>
         Welcome {session.user.user_metadata.full_name}
+        <button onClick={signOut}>Sign Out</button>
         <AddSubject />
       </div>)
     }
