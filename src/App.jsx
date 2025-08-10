@@ -1,9 +1,12 @@
+import React from 'react'
+
+import Subjects from './pages/Subjects.jsx'
 
 function App() {
 
   return (
     <div>
-      Hello world.
+      <Subjects />
     </div>
   )
 }
